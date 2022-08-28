@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  margin-left: 5%;
+  font-size: 1.3vw;
+  background-color: #f4f4f4;
+}
+header {
+  padding-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.head1 {
+  text-align: center;
+  width: 50%;
+}
+.head2 {
+  width: 50%;
+  padding-right: 10%;
+}
+.combo {
+  margin-top: 5%;
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+  height: 15%;
+}
+.subdiv1,
+.subdiv3,
+.subdiv4,
+.subdiv6 {
+  width: 75%;
+}
+.subdiv2,
+.subdiv5 {
+  width: 75%;
+  margin-top: 10%;
+  padding-bottom: 1%;
+}
+.subdiv1 img,
+.subdiv2 img,
+.subdiv3 img,
+.subdiv4 img,
+.subdiv5 img,
+.subdiv6 img {
+  width: 80%;
+  margin-bottom: 3%;
+  float: right;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 14px 28px, rgba(0, 0, 0, 0.4) 0px 10px 10px;
+  transition: 1s;
+}
+.subdiv1 img:hover,
+.subdiv2 img:hover,
+.subdiv3 img:hover,
+.subdiv4 img:hover,
+.subdiv5 img:hover,
+.subdiv6 img:hover {
+  transform: scale(120%);
+}
+.subdiv1 p,
+.subdiv2 p,
+.subdiv3 p,
+.subdiv4 p,
+.subdiv5 p,
+.subdiv6 p {
+  margin-left: 20%;
+}
+.subdiv1-line p {
+  float: left;
+  padding-top: 75%;
+  margin-top: 6%;
+  transform: rotate(90deg);
+  font-size: 0.8vw;
+}
+.subdiv2-line p {
+  padding-top: 60%;
+  margin-top: 67%;
+  font-size: 0.8vw;
+  transform: rotate(90deg);
+}
+.subdiv3-line p {
+  margin-top: 7%;
+  padding-top: 60%;
+  transform: rotate(90deg);
+  font-size: 0.8vw;
+}
+.subdiv4-line p {
+  padding-top: 75%;
+  margin-top: 10%;
+  transform: rotate(90deg);
+  font-size: 0.8vw;
+}
+.subdiv5-line p {
+  padding-top: 65%;
+  margin-top: 70%;
+  font-size: 0.8vw;
+  transform: rotate(90deg);
+}
+.subdiv6-line p {
+  margin-top: 5%;
+  padding-top: 70%;
+  transform: rotate(90deg);
+  font-size: 0.8vw;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    margin: 5% 10% 2% 10%;
+    font-size: 2vw;
+  }
+  header {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .head1 {
+    text-align: center;
+    width: 100%;
+  }
+  .head2 {
+    padding-left: 7%;
+    text-align: left;
+    width: 100%;
+  }
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+  .subdiv1,
+  .subdiv3,
+  .subdiv5 {
+    width: 75%;
+  }
+  .subdiv2,
+  .subdiv4 {
+    width: 75%;
+    margin-top: 10%;
+    padding-bottom: 1%;
+  }
+  .subdiv6 {
+    margin-top: 20%;
+  }
+  .subdiv1-line p,
+  .subdiv2-line p,
+  .subdiv3-line p,
+  .subdiv4-line p,
+  .subdiv5-line p,
+  .subdiv6-line p {
+    font-size: 1vw;
+  }
+  .subdiv4-line p {
+    margin-top: 55%;
+  }
+  .subdiv6-line p {
+    margin-top: 130%;
+  }
+}
